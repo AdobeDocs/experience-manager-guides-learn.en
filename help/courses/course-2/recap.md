@@ -15,4 +15,4 @@ In this course, you learned about the following:
 - Troubleshooting publishing errors
 - Bulk publishing
 
->[!VIDEO](https://video.tv.adobe.com/v/338987)
+>[!VIDEO](https://video.tv.adobe.com/v/338987?quality=12&learn=on)
