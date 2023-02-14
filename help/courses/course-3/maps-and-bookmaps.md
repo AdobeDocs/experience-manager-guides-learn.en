@@ -8,7 +8,7 @@ exl-id: 9c717e4b-017b-4f2b-b93e-f2c0e7525c55
 Adobe Experience Manager Guides' Map Editor allows you to create and edit map files. Using the Map Editor, you can edit two types of files — DITA map and bookmap. For our purposes, consider these to be largely interchangeable concepts. 
 The Map Editor comes in two modes — the Basic Map Editor and the Advanced Map Editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/342766)
+>[!VIDEO](https://video.tv.adobe.com/v/342766?quality=12&learn=on)
 
 ## Create a map
 
