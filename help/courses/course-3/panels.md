@@ -7,7 +7,7 @@ exl-id: 24ecfc93-3540-4efa-ae85-afb346454b7f
 
 The AEM Guides Web Editor is divided into multiple sections including a main toolbar, a secondary toolbar, a left panel, a content editing area, and a right panel.
 
->[!VIDEO](https://video.tv.adobe.com/v/342760)
+>[!VIDEO](https://video.tv.adobe.com/v/342760?quality=12&learn=on)
 
 ## Resize the left panel
 
