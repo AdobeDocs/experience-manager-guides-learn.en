@@ -7,7 +7,7 @@ exl-id: 453c5a09-0bcf-4760-87fc-df3ea4a3a30a
 
 One of the main features of DITA is the ability to reuse content. It allows reuse of  content from small phrases up to entire topics or maps.  However, for content to be effectively reused, it must be well managed. Ensure that you have an effective Content Strategy when working with reusable information.
 
->[!VIDEO](https://video.tv.adobe.com/v/342757)
+>[!VIDEO](https://video.tv.adobe.com/v/342757?quality=12&learn=on)
 
 ## Create a reusable topic
 
