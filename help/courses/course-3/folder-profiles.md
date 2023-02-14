@@ -9,7 +9,7 @@ AEM provides quick access to configuration tools. By customizing Folder Profiles
 
 Sample files that you may opt to use for this lesson are provided in the file [folderprofiles.zip](assets/folderprofiles.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342758)
+>[!VIDEO](https://video.tv.adobe.com/v/342758?quality=12&learn=on)
 
 ## Access Folder Profiles
 
