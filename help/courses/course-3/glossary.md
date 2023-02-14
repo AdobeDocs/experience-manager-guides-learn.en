@@ -9,7 +9,7 @@ The Glossary panel allows a map to be parsed. You can create a Glossary topic fi
 
 Sample files that you may opt to use for this lesson are provided in the file [glossary.zip](assets/glossary.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342765)
+>[!VIDEO](https://video.tv.adobe.com/v/342765?quality=12&learn=on)
 
 ## Add a glossary entry to a topic
 
