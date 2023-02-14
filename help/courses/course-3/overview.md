@@ -5,7 +5,7 @@ exl-id: f73a11ae-07e4-42c6-a803-7bdffe08de6d
 ---
 # Course Overview
 
->[!VIDEO](https://video.tv.adobe.com/v/342759)
+>[!VIDEO](https://video.tv.adobe.com/v/342759?quality=12&learn=on)
 
 In this course, you will learn to work with the following:
 
