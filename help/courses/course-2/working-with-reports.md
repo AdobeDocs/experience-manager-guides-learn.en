@@ -7,7 +7,7 @@ exl-id: 755506a6-c416-4a8c-8359-8db7e63a90a4
 
 The Reports tab in the Map Dashboard allows you to identify and resolve broken links, content that is referenced and reused (conrefs), cross references, or other missing information. 
 
->[!VIDEO](https://video.tv.adobe.com/v/339039)
+>[!VIDEO](https://video.tv.adobe.com/v/339039?quality=12&learn=on)
 
 ## Preparing for the exercise
 
