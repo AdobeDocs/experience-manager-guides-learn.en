@@ -7,7 +7,7 @@ exl-id: 3c229c30-f2e0-4fb0-b60c-7bae60ef1a5b
 
 Using a baseline allows you to create a version of your map topics and related reference content. This can be based on a specific date or time, or labels. 
 
->[!VIDEO](https://video.tv.adobe.com/v/338993)
+>[!VIDEO](https://video.tv.adobe.com/v/338993?quality=12&learn=on)
 
 ## Accessing the Baselines Tab in the Map Dashboard
 
