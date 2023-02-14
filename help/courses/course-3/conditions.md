@@ -9,7 +9,7 @@ In DITA, conditions are often driven through attributes such as Product, Platfor
 
 Sample files that you may opt to use for this lesson are provided in the file [conditions.zip](assets/conditions.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342755)
+>[!VIDEO](https://video.tv.adobe.com/v/342755?quality=12&learn=on)
 
 ## Assign conditions to a Folder Profile
 
