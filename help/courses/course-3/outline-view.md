@@ -7,7 +7,7 @@ exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
 
 The Outline View provides a broad range of support when working with a structured document. Expand and collapse the view, navigate the structure, work with Attributes (for example to create a new ID), and reorganize, unwrap, and restructure elements at the click of a button.
 
->[!VIDEO](https://video.tv.adobe.com/v/342767)
+>[!VIDEO](https://video.tv.adobe.com/v/342767?quality=12&learn=on)
 
 ## Expand and collapse the Outline View
 
