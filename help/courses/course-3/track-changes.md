@@ -7,7 +7,7 @@ exl-id: 57779920-b3b4-44be-a1fb-89ea7c89eef7
 
 You can keep track of all updates made on a document by enabling the Track Changes mode. This mode enables you and your team to capture all insertions and deletions during the document review process.
 
->[!VIDEO](https://video.tv.adobe.com/v/342763)
+>[!VIDEO](https://video.tv.adobe.com/v/342763?quality=12&learn=on)
 
 ## Work with the Track Changes feature
 
