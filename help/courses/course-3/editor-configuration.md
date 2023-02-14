@@ -9,7 +9,7 @@ If you work in a restrictive environment, you can choose which features your aut
 
 Sample files that you may opt to use for this lesson are provided in the file [xmleditorconfiguration.zip](assets/xmleditorconfiguration.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342762)
+>[!VIDEO](https://video.tv.adobe.com/v/342762?quality=12&learn=on)
 
 ## Customize the default Editor UI Configuration
 
