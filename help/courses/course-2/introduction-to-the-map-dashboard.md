@@ -7,7 +7,7 @@ exl-id: c2efa073-15e7-42a0-aaa8-04859b0fdf62
 
 The following will provide an overview of the map dashboard’s main features.
 
->[!VIDEO](https://video.tv.adobe.com/v/339040)
+>[!VIDEO](https://video.tv.adobe.com/v/339040?quality=12&learn=on)
 
 ## Open a map in the Map Dashboard
 
