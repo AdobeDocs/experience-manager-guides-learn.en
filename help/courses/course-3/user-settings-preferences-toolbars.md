@@ -7,7 +7,7 @@ exl-id: 8cb099e4-d985-4eeb-b1a5-0e372b04d218
 
 The Editor has a highly configurable interface. The mix of User Preferences, Editor Settings, and Folder Profiles means you can customize nearly every aspect to your specific work environment.
 
->[!VIDEO](https://video.tv.adobe.com/v/342769)
+>[!VIDEO](https://video.tv.adobe.com/v/342769?quality=12&learn=on)
 
 ## Show or hide element tags
 
