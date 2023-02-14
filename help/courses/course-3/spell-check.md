@@ -7,7 +7,7 @@ exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
 
 The AEM Guides Editor has powerful spell check and Find and Replace capabilities.
 
->[!VIDEO](https://video.tv.adobe.com/v/342768)
+>[!VIDEO](https://video.tv.adobe.com/v/342768?quality=12&learn=on)
 
 Correct a spelling error
 
