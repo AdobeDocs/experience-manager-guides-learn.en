@@ -7,7 +7,7 @@ exl-id: b37ea3e7-59cf-4fc5-8fae-e1fadd26f8d8
 
 Publishing a map is usually simple. Open the map, select an Output Preset, and generate output! However, if a map, or its topics have errors in them the output generation can fail. When this happens, it’s important to know how to troubleshoot.
 
->[!VIDEO](https://video.tv.adobe.com/v/338990)
+>[!VIDEO](https://video.tv.adobe.com/v/338990?quality=12&learn=on)
 
 ## Preparing for the exercise
 
