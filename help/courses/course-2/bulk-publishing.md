@@ -7,7 +7,7 @@ exl-id: b277e846-ef71-47ec-a66c-ac9d392d53e0
 
 When publishing there is often a need for more than one type of documentation. Using Map Collections you can control the number and types of output that will be assembled and generated and kick off bulk publishing. The Publish Dashboard allows you to view active publish jobs. The Bulk Publish Dashboard provides a way to activate collections in bulk.
 
->[!VIDEO](https://video.tv.adobe.com/v/338985)
+>[!VIDEO](https://video.tv.adobe.com/v/338985?quality=12&learn=on)
 
 ## Working with Map Collections
 
