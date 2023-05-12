@@ -1,13 +1,13 @@
 ---
 title: Native PDF Publish Feature | Add barcode
-description: Learn how to add barcode.
+description: Learn how to add barcodes.
 exl-id: ?????
 ---
 # Add barcode 
 
 Barcodes can be useful to include information that can be easily processed by machines. Similarly, QR-codes can be used for links that readers can open with their mobile devices. 
 
-This tutorial demonstrates how to add barcode on the top of every page in the generated PDF document. 
+This tutorial demonstrates how to add barcodes on the top of every page in the generated PDF document. 
 
 
 ### Resource ID in DITA map
@@ -30,7 +30,7 @@ Resource ID element is added to the DITA map which will be content for the barco
 
 It's also possible to edit this ID in authoring mode. 
 
-<img src="./assets/barcode-map.png" alt="Sample output with barcode" width=500>
+<img src="./assets/barcode-map.png" alt="Sample output with barcode" width=700>
 
 
 ### Adding barcode placeholder to the template header
@@ -64,7 +64,7 @@ It's also possible to edit this ID in authoring mode.
 
 Following steps described above we can generate PDF output with barcode. 
 
-<img src="./assets/barcode-output-sample.png" alt="Sample output with barcode" width=500>
+<img src="./assets/barcode-output-sample.png" alt="Sample output with barcode" width=700>
 
 
 ## References 
