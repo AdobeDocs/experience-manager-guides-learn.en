@@ -67,7 +67,35 @@ Following steps described above we can generate PDF output with barcode.
 <img src="./assets/barcode-output-sample.png" alt="Sample output with barcode" width=700>
 
 
-## References 
+## Barcode types
 
-[Barcode types available](https://www.pdfreactor.com/samples/#av_section_6).
+| Type                            | CSS attribute           | Additional attribute(s)    |
+| ------------------------------- | ----------------------- | -------------------------- |
+| QR Code                         | qrcode                  |                            | 
+| PDF417                          | pdf417                  |                            |
+| DataMatrix                      | data-matrix             |                            |
+| Aztec Code                      | aztec-code              |                            |
+| Grid Matrix                     | grid-matrix             |                            |
+| Maxicode                        | maxicode mode-4         |                            |
+| Micro QR                        | microqr                 |                            |
+| Code One                        | code-one                |                            |
+| Codablock F                     | codablockf              |                            |
+| GS1 Databar Limited             | databar-limited         |                            |
+| GS1 Databar Omnidirectional     | databar omnidirectional |                            |
+| EAN-13                          | ean-13                  |                            | 
+| GS1-128 (EAN-128)               | code128                 | -ro-barcode-encoding: gs1; | 
+| ITF-14                          | itf14                   |                            | 
+| UPC-A                           | upc-a                   |                            | 
+| Code 128                        | code128                 |                            | 
+| Interleaved 2 of 5              | code2of5 interleaved    |                            | 
+| POSTNET                         | postnet                 |                            | 
+| Dutch Post Kixcode              | kixcode                 |                            | 
+| Korea Post                      | korea-post              |                            | 
+| Deutsche Post Leitcode          | dp-leitcode             |                            | 
+| Australia Post                  | auspost                 |                            | 
+| Logmars                         | logmars                 |                            | 
+| Pharmacode                      | pharmacode              |                            | 
+| USPS OneCode (Intelligent Mail) | usps-onecode            |                            | 
+
+
 
