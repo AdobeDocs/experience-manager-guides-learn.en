@@ -35,13 +35,13 @@ You can always download the default UI configuration to your local system, make 
 
 You can now open and modify the content in a text editor. The _AEM Guides Installation and Configuration_ Guide contains samples of how to remove, customize, or add functions to the UI configuration.
 
-## Upload the modified XML Editor UI Configuration
+## Upload the modified XML Editor Configuration
 
 After customizing the UI configuration, you can upload it. Note that a sample configuration file _ui-config-restricted-editor.json_ is provided with the set of supporting topics for this lesson.
 
 1. Within the Folder Profile, click the [!UICONTROL **XML Editor Configuration**] tab.
 
-1. Under XML Editor UI configuration, click [!UICONTROL **Upload**].
+1. Under XML Editor configuration, click [!UICONTROL **Upload**].
 
     ![Upload](images/lesson-4/upload.png)
 
