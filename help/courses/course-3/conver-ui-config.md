@@ -211,13 +211,13 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 1. On **XML Editor configuration** tab click on **Edit** in the topbar.
 1. Now in **XML Editor UI configuration** sub-section you will be able to see a **upload** button.
 
-    ![Upload button](images/reuse/ui_config_upload.png)
+    ![Upload button](images/reuse/ui-config-upload.png)
 
 1. You can click and upload the modified json. (The json to be uploaded should have same name as the id of widget being customized)
 1. Once uploaded, hit **Save** in topbar.
 1. For each uploaded file you can also **delete** the json to remove its customizarion from the UI or **download** to view or modify it again.
 
-    ![Download button](images/reuse/download_delete_json.png)
+    ![Download button](images/reuse/download-delete-json.png)
 
 <br>
 
@@ -251,13 +251,13 @@ For an old class, you can inspect element and modify the existing classes as wel
 1. On **XML Editor configuration** tab click on **Edit** in the topbar.
 1. Now in **XML Editor page layout** sub-section you will be able to see a **upload** button.
 
-    ![Upload button](images/reuse/page_layout_upload.png)
+    ![Upload button](images/reuse/page-layout-upload.png)
 
 1. You can click and upload the modified css. (Only css files are supported)
 1. Once uploaded, hit **Save** in topbar.
 1. For each uploaded file you can also **delete** the css to remove its customizarion from the UI or **download** to view or modify it again.
 
-    ![Upload button](images/reuse/download_delete_css.png)
+    ![Upload button](images/reuse/download-delete-css.png)
 
 
 <br>
@@ -267,7 +267,7 @@ For an old class, you can inspect element and modify the existing classes as wel
 Here we add a new button **Insert Custom Table** in **editor_toolbar** to add a simple table which is visible only in preview mode and apply a custom css on it.
 This css modifies the background of button and font size of its title.
 
-![CSS example](images/reuse/css_customization.png)
+![CSS example](images/reuse/css-customization.png)
 
 
 ```css
