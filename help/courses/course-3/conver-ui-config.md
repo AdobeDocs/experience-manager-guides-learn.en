@@ -189,14 +189,14 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 1. On **XML Editor configuration** tab click on **Edit** in the topbar.
 1. Now in **XML Editor UI configuration** sub-section you will be able to see a **upload** button.
 
-    ![Upload button](images/reuse/ui-config-upload.png)
+    ![Upload button](images/reuse/ui-config-upload.png){width="400" height="150"}
 
 1. You can click and upload the modified json. (The json to be uploaded should have same name as the id of widget being customized)
 1. Once uploaded, hit **Save** in topbar.
 
     For each uploaded file you can also **delete** the json to remove its customizarion from the UI or **download** to view or modify it again.
 
-    ![Download button](images/reuse/download-delete-json.png)
+    ![Download button](images/reuse/download-delete-json.png){width="400" height="150"}
 
 <br>
 
@@ -230,14 +230,14 @@ For an old class, you can inspect element and modify the existing classes as wel
 1. On **XML Editor configuration** tab click on **Edit** in the topbar.
 1. Now in **XML Editor page layout** sub-section you will be able to see a **upload** button.
 
-    ![Upload button](images/reuse/page-layout-upload.png)
+    ![Upload button](images/reuse/page-layout-upload.png){width="400" height="150"}
 
 1. You can click and upload the modified css. (Only css files are supported)
 1. Once uploaded, hit **Save** in topbar.
 
     For each uploaded file you can also **delete** the css to remove its customizarion from the UI or **download** to view or modify it again.
 
-    ![Upload button](images/reuse/download-delete-css.png)
+    ![Download button](images/reuse/download-delete-css.png){width="400" height="150"}
 
 
 <br>
