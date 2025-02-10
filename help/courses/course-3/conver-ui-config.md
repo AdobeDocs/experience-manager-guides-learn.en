@@ -12,18 +12,18 @@ When migrating from the old UI to the new AEM Guides UI, updates to **ui_config*
 
 JSON files can be added to the XML Editor UI Configuration section for various screens and widgets. Below is a list of widely used widgets and their IDs:
 
-1. [editor_toolbar](assets/toolbars/editor_toolbar.json): Toolbar for editor page
-1. [editor_tab_bar](assets/toolbars/editor_tab_bar.json): This is the bar on editor page which has options like Save all, tripple dot and maximise guides.
-1. [file_mode_switcher](assets/toolbars/file_mode_switcher.json): Allows switching between file modes on the editor UI.
+1. [editor_toolbar](assets/toolbars/editor_toolbar.json): Webeditor toolbar consisting of file and content actions.
+1. [editor_tab_bar](assets/toolbars/editor_tab_bar.json): Tabbed view of open files within webeditor, has actions you can perform on opened files.
+1. [file_mode_switcher](assets/toolbars/file_mode_switcher.json): It helps switching between different available modes (author, source, preview) for the opened files within webeditor.
 
     ![editor_toolbar](images/reuse/editor_toolbar.png)
 
-1. [map_console_navigation_bar](assets/toolbars/map_console_navigation_bar.json): The header of map console page where we show map name and option to goto settings.
-1. [map_console_action_bar](assets/toolbars/map_console_action_bar.json): This is the toolbar of map console page where all the buttons in respect to each UI like preset, reports, baseline etc comes up.
+1. [map_console_navigation_bar](assets/toolbars/map_console_navigation_bar.json): It is the information bar for map opened in map console. It allows changing map and provides access to settings.
+1. [map_console_action_bar](assets/toolbars/map_console_action_bar.json): This is the action bar for map console items such as Output Preset, Baseline, Translation, and Reports which provides relevant information along with their respective action buttons.
 
     ![map_console](images/reuse/map_console.png)
 
-1. [home_navigation_bar](assets/toolbars/home_navigation_bar.json): This is the header bar of home page where you see a welcome message and the selected folder profile
+1. [home_navigation_bar](assets/toolbars/home_navigation_bar.json): Header bar of Guides home page where welcome message is displayed along with selected folder profile.
 
     ![home_navigation_bar](images/reuse/home_navigation_bar.png)
 
