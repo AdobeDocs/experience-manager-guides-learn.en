@@ -32,6 +32,7 @@ breadcrumb-title: Tutorials for AEM Guides
   + [Authoring overview](./course-3/overview.md)
   + [User Preferences, Editor Settings, and Editor Toolbars](./course-3/user-settings-preferences-toolbars.md)
   + [Folder Profiles](./course-3/folder-profiles.md)
+  + [Convert UI Config](./course-3/conver-ui-config.md)
   + [Editor Configuration](./course-3/editor-configuration.md)
   + [Panels](./course-3/panels.md)
   + [Outline View](./course-3/outline-view.md)
