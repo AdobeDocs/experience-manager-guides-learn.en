@@ -1,7 +1,6 @@
 ---
 title: AEM Guides Editor Configuration
 description: Customizing JSON configurations and converting UI configurations for the new AEM Guides Editor.
-exl-id: 437d9598-4afc-431f-81bd-6762e22656b7
 ---
 # Overview
 
