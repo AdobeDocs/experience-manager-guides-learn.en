@@ -7,6 +7,9 @@ exl-id: bb047962-0e2e-4b3a-90c1-052a2a449628
 
 When migrating from the old UI to the new AEM Guides UI, updates to **ui_config** must be converted to more flexible and modular UI configurations. This framework helps adopt changes seamlessly into the **editor_toolbar** and [other toolbars](/help/courses/course-3/conver-ui-config.md#editing-json-for-different-screens). The process also supports modifying other views and widgets in the application. 
 
+>[!NOTE]
+>
+>Customizations applied to specific buttons might face issues during the transition to the extension framework. If this occurs, please reach out to the AEM Guides Customer Success team for prompt support and resolution.
 
 ## Editing JSON for different screens
 
@@ -183,6 +186,75 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 ![Youtube button](images/reuse/youtube-button.png)
 
 <br>
+
+### Adding a button in preview mode
+
+Adding a button **Export as PDF** in **Preview** mode which will be visible both in lock and unlock mode.
+
+```json
+{
+  "id": "editor_toolbar",
+  "view": {
+    "items": [
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Download as PDF",
+          "viewState": "prepend"
+        }
+      },
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+```
+
+The following snippets show the **Export as PDF** button with lock and unlock scenarios.  
+
+![Export as PDF](images/reuse/lock.png)
+
+![Export as PDF](images/reuse/unlock.png)
+
+By default, any added button is hidden in case of Read only mode. Adding a target as mentioned below, will add the button for unlock scenario.
+
+```json
+
+"target": {
+  "key": "label",
+  "value": "Download as PDF",
+  "viewState": "prepend"
+}
+
+```
+
 
 ## How to upload customized JSONs
 
