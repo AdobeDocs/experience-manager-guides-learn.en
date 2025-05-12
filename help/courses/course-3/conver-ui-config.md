@@ -9,7 +9,7 @@ When migrating from the old UI to the new AEM Guides UI, updates to **ui_config*
 
 >[!NOTE]
 >
->Customizations applied to specific buttons might face issues during the transition to the extension framework. If this occurs, please reach out to the AEM Guides Customer Success team for prompt support and resolution.
+>Customizations applied to specific buttons might face issues during the transition to the extension framework. If this occurs, you can raise a support ticket with reference to this page for prompt support and resolution.
 
 ## Editing JSON for different screens
 
@@ -189,6 +189,18 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 
 ### Adding a button in preview mode
 
+By default, any newly added button is hidden when the interface is in **read-only** mode. To make a button visible in read-only, you must specify a `target` that places it within a toolbar subsection that remains accessible in the unlocked state. When you specify the target as `Download as PDF`, it ensures that the button is added to the same section as the existing button, which is visible in the unlock mode. Specifying the target in this way ensures that the button is displayed in the unlock mode.
+
+```json
+
+"target": {
+  "key": "label",
+  "value": "Download as PDF",
+  "viewState": "prepend"
+}
+
+```
+
 Adding a button **Export as PDF** in **Preview** mode which will be visible both in lock and unlock mode.
 
 ```json
@@ -237,24 +249,13 @@ Adding a button **Export as PDF** in **Preview** mode which will be visible both
 
 ```
 
-The following snippets show the **Export as PDF** button with lock and unlock scenarios.  
+The following snippet shows the **Export as PDF** button with lock scenario.  
 
 ![Export as PDF](images/reuse/lock.png)
 
+Also, the **Export as PDF** button with the unlock scenario can be seen in the snippet below. 
+
 ![Export as PDF](images/reuse/unlock.png)
-
-By default, any added button is hidden in case of Read only mode. Adding a target as mentioned below, will add the button for unlock scenario.
-
-```json
-
-"target": {
-  "key": "label",
-  "value": "Download as PDF",
-  "viewState": "prepend"
-}
-
-```
-
 
 ## How to upload customized JSONs
 
