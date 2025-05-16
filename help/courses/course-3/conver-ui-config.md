@@ -95,13 +95,13 @@ Example JSON Structure:
 
 Below is a breakdown of each property, its purpose, and supported values.
 
-`mode`
+### `mode`
 
 Defines the operational mode of the editor.
 
 **Supported values**: `author`, `source`, `preview`, `layout` (previously `toc`), `split`
 
-`displayMode` *(optional)*
+### `displayMode` *(optional)*
 
 Controls visibility or interactivity of UI components. Remains set to `show` if not specified.
 
@@ -127,13 +127,13 @@ Example:
       },
 ```
 
-`editor`
+### `editor`
 
 Specifies the primary document type in the editor.
 
 **Supported values**: `ditamap`, `bookmap`, `subjectScheme`, `xml`, `css`, `translation`, `preset`, `pdf_preset`
 
-`documentType`
+### `documentType`
 
 Indicates the primary document type.
 
@@ -163,7 +163,7 @@ Example:
       },
 ```
 
-`documentSubType`
+### `documentSubType`
 
 Further classifies the document based on `documentType`.
 
@@ -195,7 +195,7 @@ Example:
       },
 ```
 
-`flag`
+### `flag`
 
 Boolean indicators for document state or capabilities.
 
