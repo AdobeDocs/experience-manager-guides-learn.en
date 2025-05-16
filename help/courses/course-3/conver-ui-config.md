@@ -33,18 +33,26 @@ JSON files can be added to the XML Editor UI Configuration section for various s
 
 Each JSON follows a consistent structure:
 
-1. **id**: Specifies the widget where the component is being customized.
-1. **targetEditor**: Defines when to display or hide a button using editor and mode properties:
+1. `id`: Specifies the widget where the component is being customized.
+1. `targetEditor`: Defines when to display or hide a button using editor and mode properties:
     
-    Currently we have these **editor** and **mode** in our system.
+    The following options are supported under `targetEditor`:
     
-    **editor**: ditamap, bookmap, subjectScheme, xml, css, translation, preset, pdf_preset
+    - `mode`
+    - `displayMode`
+    - `editor`
+    - `documentType`
+    - `documentSubType`   
+    - `flag`
 
-    **mode**: author, source, preview, toc, split 
-    
-    (Note: toc mode applies to layout view.)
+    For detals, view [Understanding targetEditor properties](#understanding-targeteditor-properties)
 
-1. **target**: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
+    >[!NOTE]
+    >
+    > A new field, `documentType`, is now available alongside the existing `editor` field.  Both fields are supported and can be used as needed. However, using `documentType` is recommended to ensure consistency across implementations. The `editor` field remains valid to support backward compatibility and existing integrations.
+      
+
+1. `target`: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
   
       * **append**: Add at the end.
 
@@ -82,6 +90,140 @@ Example JSON Structure:
 ```
 
 <br>
+
+## Understanding `targetEditor` properties
+
+Below is a breakdown of each property, its purpose, and supported values.
+
+`mode`
+
+Defines the operational mode of the editor.
+
+**Supported values**: `author`, `source`, `preview`, `layout` (previously `toc`), `split`
+
+`displayMode` *(optional)*
+
+Controls visibility or interactivity of UI components. Remains set to `show` if not specified.
+
+**Supported values**: `show`, `hide`, `enabled`, `disabled`
+
+Example:
+
+```
+ {
+        "icon": "textBulleted",
+        "title": "Custom Insert Bulleted",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "ditamap"
+          ],
+          "mode": [
+            "author"
+          ],
+          "displayMode": "hide"
+        }
+      },
+```
+
+`editor`
+
+Specifies the primary document type in the editor.
+
+**Supported values**: `ditamap`, `bookmap`, `subjectScheme`, `xml`, `css`, `translation`, `preset`, `pdf_preset`
+
+`documentType`
+
+Indicates the primary document type.
+
+**Supported values**:  `dita`, `ditamap`, `bookmap`, `subjectScheme`, `css`, `preset`, `ditaval`, `reports`, `baseline`, `translation`, `html`, `markdown`, `conditionPresets`
+
+> Additional values may be supported for specific use cases.
+
+Example:
+
+```
+ {
+        "icon": "textNumbered",
+        "title": "Custom Numbered List",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "dita",
+            "ditamap"
+          ],
+          "mode": [
+            "author",
+            "source"
+          ]
+
+        }
+      },
+```
+
+`documentSubType`
+
+Further classifies the document based on `documentType`.
+
+- **For `preset`**: `pdf`, `html5`, `aemsite`, `nativePDF`, `json`, `custom`, `kb`
+- **For `dita`**: `topic`, `reference`, `concept`, `glossary`, `task`, `troubleshooting`
+
+> Additional values may be supported for specific use cases.
+
+Example:
+
+```
+ {
+        "icon": "rename",
+        "title": "Custom Rename",
+        "on-click": "$$PUBLISH_PRESETS_RENAME",
+        "label": "Custom Rename",
+        "key": "$$PUBLISH_PRESETS_RENAME",
+        "targetEditor": {
+          "documentType": [
+            "preset"
+          ],
+          "documentSubType": [
+            "nativePDF",
+            "aemsite",
+            "json"
+          ]
+
+        }
+      },
+```
+
+`flag`
+
+Boolean indicators for document state or capabilities.
+
+**Supported values**: `isOutputGenerated`, `isTemporaryFileDownloadable`, `isPDFDownloadable`, `isLocked`, `isUnlocked`, `isDocumentOpen`
+
+Additionally, you can also create a custom flag inside `extensionMap` which is utilized as a flag in `targetEditor`. Here, `extensionMap` is a global variable used to add custom keys or observable values. 
+
+Example:
+
+```
+ {
+        "icon": "filePDF",
+        "title": "Custom Export pdf",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "documentType": [
+            "markdown"
+          ],
+          "mode": [
+            "preview"
+          ],
+          "flag": ["isPDFDownloadable"]
+
+        }
+      },
+```
+
 
 ## Examples
 
