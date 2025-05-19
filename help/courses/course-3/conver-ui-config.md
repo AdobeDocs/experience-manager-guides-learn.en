@@ -189,7 +189,9 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 
 ### Adding a button in preview mode
 
-By default, any newly added button is hidden when the interface is in **read-only** mode. To make a button visible in read-only, you must specify a `target` that places it within a toolbar subsection that remains accessible in the unlocked state. When you specify the target as `Download as PDF`, it ensures that the button is added to the same section as the existing button, which is visible in the unlock mode. Specifying the target in this way ensures that the button is displayed in the unlock mode.
+In accordance with the design, the button visibility is managed separately for locked and unlocked (read-only) modes to maintain a clear and controlled user experience. By default, any newly added button is hidden when the interface is in read-only mode.
+To make a button visible in **read-only** mode, you must specify a target that places it within a toolbar subsection that remains accessible even when the interface is locked.
+For example, by specifying the target as **Download as PDF**, you can ensure the button appears in the same section as an existing visible button, thereby making it accessible in unlocked mode.
 
 ```json
 
