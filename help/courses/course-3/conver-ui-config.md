@@ -49,7 +49,9 @@ Each JSON follows a consistent structure:
 
     >[!NOTE]
     >
-    > A new field, `documentType`, is now available alongside the existing `editor` field.  Both fields are supported and can be used as needed. However, using `documentType` is recommended to ensure consistency across implementations. The `editor` field remains valid to support backward compatibility and existing integrations.
+    > The 2506 release of Experience Manager Guides introduces new properties: `displayMode`, `documentType`, `documentSubType`, and `flag`. These properties are supported only from version 2506 onwards. Similarly, the change from `toc` to `layout` in the mode property also applies starting with this release.
+    >
+    > A new field, `documentType`, is now available alongside the existing `editor` field.  Both fields are supported and can be used as needed. However, using `documentType` is recommended to ensure consistency across implementations, especially when working with the `documentSubType` property. The `editor` field remains valid to support backward compatibility and existing integrations. 
       
 
 1. `target`: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
@@ -103,7 +105,7 @@ Defines the operational mode of the editor.
 
 ### `displayMode` *(optional)*
 
-Controls visibility or interactivity of UI components. Remains set to `show` if not specified.
+Controls visibility or interactivity of UI components. The default value is set to `show` if not specified.
 
 **Supported values**: `show`, `hide`, `enabled`, `disabled`
 
