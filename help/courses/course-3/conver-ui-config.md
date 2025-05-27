@@ -7,6 +7,9 @@ exl-id: bb047962-0e2e-4b3a-90c1-052a2a449628
 
 When migrating from the old UI to the new AEM Guides UI, updates to **ui_config** must be converted to more flexible and modular UI configurations. This framework helps adopt changes seamlessly into the **editor_toolbar** and [other toolbars](/help/courses/course-3/conver-ui-config.md#editing-json-for-different-screens). The process also supports modifying other views and widgets in the application. 
 
+>[!NOTE]
+>
+>Customizations applied to specific buttons might face issues during the transition to the extension framework. If this occurs, you can raise a support ticket with reference to this page for prompt support and resolution.
 
 ## Editing JSON for different screens
 
@@ -327,6 +330,78 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 ![Youtube button](images/reuse/youtube-button.png)
 
 <br>
+
+### Adding a button in preview mode
+
+In accordance with the design, the button visibility is managed separately for locked and unlocked (read-only) modes to maintain a clear and controlled user experience. By default, any newly added button is hidden when the interface is in read-only mode.
+To make a button visible in **read-only** mode, you must specify a target that places it within a toolbar subsection that remains accessible even when the interface is locked.
+For example, by specifying the target as **Download as PDF**, you can ensure the button appears in the same section as an existing visible button, thereby making it accessible in unlocked mode.
+
+```json
+
+"target": {
+  "key": "label",
+  "value": "Download as PDF",
+  "viewState": "prepend"
+}
+
+```
+
+Adding a button **Export as PDF** in **Preview** mode which will be visible both in lock and unlock mode.
+
+```json
+{
+  "id": "editor_toolbar",
+  "view": {
+    "items": [
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Download as PDF",
+          "viewState": "prepend"
+        }
+      },
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+```
+
+The following snippet shows the **Export as PDF** button with lock scenario.  
+
+![Export as PDF](images/reuse/lock.png)
+
+Also, the **Export as PDF** button with the unlock scenario can be seen in the snippet below. 
+
+![Export as PDF](images/reuse/unlock.png)
 
 ## How to upload customized JSONs
 
