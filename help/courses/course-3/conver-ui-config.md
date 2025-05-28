@@ -7,6 +7,9 @@ exl-id: bb047962-0e2e-4b3a-90c1-052a2a449628
 
 When migrating from the old UI to the new AEM Guides UI, updates to **ui_config** must be converted to more flexible and modular UI configurations. This framework helps adopt changes seamlessly into the **editor_toolbar** and [other toolbars](/help/courses/course-3/conver-ui-config.md#editing-json-for-different-screens). The process also supports modifying other views and widgets in the application. 
 
+>[!NOTE]
+>
+>Customizations applied to specific buttons might face issues during the transition to the extension framework. If this occurs, you can raise a support ticket with reference to this page for prompt support and resolution.
 
 ## Editing JSON for different screens
 
@@ -33,24 +36,34 @@ JSON files can be added to the XML Editor UI Configuration section for various s
 
 Each JSON follows a consistent structure:
 
-1. **id**: Specifies the widget where the component is being customized.
-1. **targetEditor**: Defines when to display or hide a button using editor and mode properties:
+1. `id`: Specifies the widget where the component is being customized.
+1. `targetEditor`: Defines when to display or hide a button using editor and mode properties:
     
-    Currently we have these **editor** and **mode** in our system.
+    The following options are supported under `targetEditor`:
     
-    **editor**: ditamap, bookmap, subjectScheme, xml, css, translation, preset, pdf_preset
+    - `mode`
+    - `displayMode`
+    - `editor`
+    - `documentType`
+    - `documentSubType`   
+    - `flag`
 
-    **mode**: author, source, preview, toc, split 
-    
-    (Note: toc mode applies to layout view.)
+    For detals, view [Understanding targetEditor properties](#understanding-targeteditor-properties)
 
-1. **target**: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
+    >[!NOTE]
+    >
+    > The 2506 release of Experience Manager Guides introduces new properties: `displayMode`, `documentType`, `documentSubType`, and `flag`. These properties are supported only from version 2506 onwards. Similarly, the change from `toc` to `layout` in the mode property also applies starting with this release.
+    >
+    > A new field, `documentType`, is now available alongside the existing `editor` field.  Both fields are supported and can be used as needed. However, using `documentType` is recommended to ensure consistency across implementations, especially when working with the `documentSubType` property. The `editor` field remains valid to support backward compatibility and existing integrations. 
+      
+
+1. `target`: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
   
-      * **append**: Add at the end.
+    - **append**: Add at the end.
 
-      * **prepend**: Add at the beginning.
+    - **prepend**: Add at the beginning.
 
-      * **replace**: Replace an existing component.
+    - **replace**: Replace an existing component.
 
 Example JSON Structure:
 
@@ -82,6 +95,140 @@ Example JSON Structure:
 ```
 
 <br>
+
+## Understanding `targetEditor` properties
+
+Below is a breakdown of each property, its purpose, and supported values.
+
+### `mode`
+
+Defines the operational mode of the editor.
+
+**Supported values**: `author`, `source`, `preview`, `layout` (previously `toc`), `split`
+
+### `displayMode` *(optional)*
+
+Controls visibility or interactivity of UI components. The default value is set to `show` if not specified.
+
+**Supported values**: `show`, `hide`, `enabled`, `disabled`
+
+Example:
+
+```
+ {
+        "icon": "textBulleted",
+        "title": "Custom Insert Bulleted",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "ditamap"
+          ],
+          "mode": [
+            "author"
+          ],
+          "displayMode": "hide"
+        }
+      },
+```
+
+### `editor`
+
+Specifies the primary document type in the editor.
+
+**Supported values**: `ditamap`, `bookmap`, `subjectScheme`, `xml`, `css`, `translation`, `preset`, `pdf_preset`
+
+### `documentType`
+
+Indicates the primary document type.
+
+**Supported values**:  `dita`, `ditamap`, `bookmap`, `subjectScheme`, `css`, `preset`, `ditaval`, `reports`, `baseline`, `translation`, `html`, `markdown`, `conditionPresets`
+
+> Additional values may be supported for specific use cases.
+
+Example:
+
+```
+ {
+        "icon": "textNumbered",
+        "title": "Custom Numbered List",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "dita",
+            "ditamap"
+          ],
+          "mode": [
+            "author",
+            "source"
+          ]
+
+        }
+      },
+```
+
+### `documentSubType`
+
+Further classifies the document based on `documentType`.
+
+- **For `preset`**: `pdf`, `html5`, `aemsite`, `nativePDF`, `json`, `custom`, `kb`
+- **For `dita`**: `topic`, `reference`, `concept`, `glossary`, `task`, `troubleshooting`
+
+> Additional values may be supported for specific use cases.
+
+Example:
+
+```
+ {
+        "icon": "rename",
+        "title": "Custom Rename",
+        "on-click": "$$PUBLISH_PRESETS_RENAME",
+        "label": "Custom Rename",
+        "key": "$$PUBLISH_PRESETS_RENAME",
+        "targetEditor": {
+          "documentType": [
+            "preset"
+          ],
+          "documentSubType": [
+            "nativePDF",
+            "aemsite",
+            "json"
+          ]
+
+        }
+      },
+```
+
+### `flag`
+
+Boolean indicators for document state or capabilities.
+
+**Supported values**: `isOutputGenerated`, `isTemporaryFileDownloadable`, `isPDFDownloadable`, `isLocked`, `isUnlocked`, `isDocumentOpen`
+
+Additionally, you can also create a custom flag inside `extensionMap` which is utilized as a flag in `targetEditor`. Here, `extensionMap` is a global variable used to add custom keys or observable values. 
+
+Example:
+
+```
+ {
+        "icon": "filePDF",
+        "title": "Custom Export pdf",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "documentType": [
+            "markdown"
+          ],
+          "mode": [
+            "preview"
+          ],
+          "flag": ["isPDFDownloadable"]
+
+        }
+      },
+```
+
 
 ## Examples
 
@@ -183,6 +330,78 @@ Replacing the **Multimedia** button from the toolbar with **Youtube** link inser
 ![Youtube button](images/reuse/youtube-button.png)
 
 <br>
+
+### Adding a button in preview mode
+
+In accordance with the design, the button visibility is managed separately for locked and unlocked (read-only) modes to maintain a clear and controlled user experience. By default, any newly added button is hidden when the interface is in read-only mode.
+To make a button visible in **read-only** mode, you must specify a target that places it within a toolbar subsection that remains accessible even when the interface is locked.
+For example, by specifying the target as **Download as PDF**, you can ensure the button appears in the same section as an existing visible button, thereby making it accessible in unlocked mode.
+
+```json
+
+"target": {
+  "key": "label",
+  "value": "Download as PDF",
+  "viewState": "prepend"
+}
+
+```
+
+Adding a button **Export as PDF** in **Preview** mode which will be visible both in lock and unlock mode.
+
+```json
+{
+  "id": "editor_toolbar",
+  "view": {
+    "items": [
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Download as PDF",
+          "viewState": "prepend"
+        }
+      },
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+```
+
+The following snippet shows the **Export as PDF** button with lock scenario.  
+
+![Export as PDF](images/reuse/lock.png)
+
+Also, the **Export as PDF** button with the unlock scenario can be seen in the snippet below. 
+
+![Export as PDF](images/reuse/unlock.png)
 
 ## How to upload customized JSONs
 
