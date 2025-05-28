@@ -59,11 +59,11 @@ Each JSON follows a consistent structure:
 
 1. `target`: Specifies where the new component will be added. This uses key-value pairs or indexes for unique identification. View states include:
   
-      * **append**: Add at the end.
+    -  **append**: Add at the end.
 
-      * **prepend**: Add at the beginning.
+    - * **prepend**: Add at the beginning.
 
-      * **replace**: Replace an existing component.
+    - **replace**: Replace an existing component.
 
 Example JSON Structure:
 
