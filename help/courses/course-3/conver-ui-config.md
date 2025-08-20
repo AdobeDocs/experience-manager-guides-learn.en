@@ -403,6 +403,101 @@ Also, the **Export as PDF** button with the unlock scenario can be seen in the s
 
 ![Export as PDF](images/reuse/unlock.png)
 
+### Customize the options appearing in the Menu dropdown of the Editor toolbar
+
+You can append, hide, replace and add custom options in the Menu dropdown using the following examples. 
+
+#### Appending 
+
+Appending an option in the Menu dropdown. Here we append **Custom menu button** in the Menu options
+
+```json
+
+{
+        "icon": "specialCharacter",
+        "title": "Custom menu button",
+        "on-click": "$$AUTHOR_INSERT_SYMBOL",
+        "targetEditor": {
+          "editor": [
+            "ditamap"
+          ],
+          "mode": [
+            "author"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Version label",
+          "viewState": "append"
+        }
+      }
+
+```
+
+#### Replacing
+
+Replacing an option that appears in the Menu dropdown. Here we are replacing **Create review task** with **Custom menu button 3**.
+
+```json
+{
+        "icon": "specialCharacter",
+        "title": "Custom menu button 3",
+        "on-click": "$$AUTHOR_INSERT_SYMBOL",
+        "target": {
+          "key": "label",
+          "value": "Create review task",
+          "viewState": "replace"
+        }
+
+      }
+
+```
+
+#### Hiding 
+
+Hiding an option that appears in the Menu dropdown. Here we are hiding **Find and replace** option from the Menu.
+
+```json
+{
+        "hide": true,
+        "target": {
+          "key": "label",
+          "value": "Find and replace",
+          "viewState": "replace"
+        }
+      }
+
+
+```
+
+#### Adding custom option in the sub-menu
+
+Adding an option in the sub-menu within the Menu dropdown.
+
+```json
+
+{
+        "icon": "viewAllTags",
+        "title": "Toggle Tags View Goziamasu",
+        "key": "AUTHOR_TOGGLE_TAG_VIEW",
+        "target": {
+          "key": "label",
+          "value": "Track changes",
+          "viewState": "replace"
+        },
+        "targetEditor": {
+          "documentType": [
+            "dita"
+          ],
+          "mode": [
+            "author"
+          ]
+        }
+
+      }
+
+```
+
 ## How to upload customized JSONs
 
 1. On **XML Editor configuration** tab click on **Edit** in the topbar.
