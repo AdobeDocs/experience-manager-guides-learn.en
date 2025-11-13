@@ -5,8 +5,6 @@ exl-id: e38a7fd5-2a29-4248-8e8f-e6a87e1eae9c
 ---
 # Create a Map
 
-{{test}}
-
 A map is an organizational tool that lets you add and organize information in a hierarchical structure. This tasks shows you how to create a map and organize content in the map.
 
 You can download example DITA files from here:
