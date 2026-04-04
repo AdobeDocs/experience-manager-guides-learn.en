@@ -66,7 +66,7 @@ publish jobs. It shows a dynamic list of maps and their current status. You can 
 
 1. Select the **Publish Dashboard** tile.
 
-        If the dashboard is blank there are no publish jobs running.
+    If the dashboard is blank there are no publish jobs running.
 
 1. Filter the dashboard as needed to view all publishing jobs.
 
