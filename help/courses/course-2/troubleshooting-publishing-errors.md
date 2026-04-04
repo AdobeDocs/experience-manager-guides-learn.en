@@ -65,28 +65,28 @@ Depending on the type of error the resolution may be simple or complex. It may b
 
 * Incorrectly named file path reference
 
-        Authors can update the path reference in the source document.
+   Authors can update the path reference in the source document.
 
 * Incorrectly named folder
 
-        Authors can update the folder name or move files as needed.
+   Authors can update the folder name or move files as needed.
 
 * Missing graphic or file
 
-        Authors can upload a missing graphic/file, rename a graphic/file, or move a graphic/file
+   Authors can upload a missing graphic/file, rename a graphic/file, or move a graphic/file
 
 * Incorrectly configured content reference
 
-        Authors can correct the location of the content referenced, or change the path to the content reference.
+   Authors can correct the location of the content referenced, or change the path to the content reference.
 
 * Broken cross-reference
 
-        Authors can correct the location the cross-reference points to, or change the destination file name or properties
+   Authors can correct the location the cross-reference points to, or change the destination file name or properties
 
 * Errors in the values for an attribute (e.g. a string rather than a number) 
 
-        Authors can update the attribute to a correct value or administrators can update the system to support new values.
+   Authors can update the attribute to a correct value or administrators can update the system to support new values.
 
 * Incorrect setup of components used by [!DNL AEM Guides]
 
-        Administrators can update the installation of the system, its components, or permissions.
+   Administrators can update the installation of the system, its components, or permissions.
