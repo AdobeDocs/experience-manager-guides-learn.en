@@ -1,7 +1,16 @@
 ---
 title: Understanding the AEM user interface in [!DNL AEM Guides]
-description:  Understanding the AEM user interface in [!DNL Adobe Experience Manager Guides]
+description: Understanding the AEM user interface in [!DNL Adobe Experience Manager Guides]
 exl-id: 955a05ed-92d3-480e-9c6b-a0ff362cc464
+TQID: https://experienceleague.adobe.com/k69iwbiqIEyFjgOMiBC2gMm1QWqxddSTC1xoRQmJmKQ
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+    internal-label: Experience Manager Guides
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Understanding the AEM User Interface
 

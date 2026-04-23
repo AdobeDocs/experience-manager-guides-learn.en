@@ -2,6 +2,18 @@
 title: Outline View
 description: Using Outline View in AEM Guides
 exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
+TQID: https://experienceleague.adobe.com/nZjBabsObAB0RzalVCDMBDvxD4noAsA1p4-N-6EBXuQ
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+    internal-label: Experience Manager Guides
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cb8c6a2a-3c38-4e40-867c-756f8c36bb0e
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Outline View
 
