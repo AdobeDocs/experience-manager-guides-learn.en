@@ -6,6 +6,11 @@ product: Experience Manager
 index: true
 type: Tutorial
 solution: Experience Manager, Experience Manager Guides
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    label: "Experience Manager"
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+    label: "Experience Manager Guides"
 landing-page-name: experience-manager-guides
 landing-page-breadcrumb-title: AEM Guides
 feature-set: Experience Manager Guides
