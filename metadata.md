@@ -11,6 +11,7 @@ product_v2:
     internal-label: "Experience Manager"
   - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
     internal-label: "Experience Manager Guides"
+usetq: true
 landing-page-name: experience-manager-guides
 landing-page-breadcrumb-title: AEM Guides
 feature-set: Experience Manager Guides
