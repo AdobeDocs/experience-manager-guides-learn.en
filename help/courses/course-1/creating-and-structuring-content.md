@@ -29,7 +29,7 @@ Once you have familiarized yourself with the user interface, you can begin to cr
 
 1. Select the **+** icon and **Folder**.
 
-   ![+ icon](images/lesson-3/+-icon.png)
+   ![+ icon](images/lesson-3/plus-icon.png)
 
 1. Give the folder a title.
 1. Select **Create**.
